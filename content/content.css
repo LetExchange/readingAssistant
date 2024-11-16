@@ -1,0 +1,104 @@
+.reader-sidebar {
+  position: fixed;
+  top: 0;
+  right: -33.33%;
+  width: 33.33%;
+  height: 100vh;
+  background: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 9999;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.reader-sidebar.open {
+  right: 0;
+}
+
+.reader-toggle {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: #4CAF50;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10000;
+  border-radius: 5px 0 0 5px;
+}
+
+.dark-mode {
+  background: #222;
+  color: #eee;
+}
+
+.reader-content {
+  font-size: 16px;
+  line-height: 1.8;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #333;
+  padding: 15px;
+}
+
+.reader-content h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.reader-content h2 {
+  font-size: 20px;
+  margin: 15px 0;
+  color: #333;
+}
+
+.reader-content p {
+  margin: 12px 0;
+  text-align: justify;
+}
+
+.reader-controls {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.reader-controls button {
+  padding: 8px 12px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.reader-controls button:hover {
+  background: #45a049;
+}
+
+.dark-mode {
+  background: #222;
+}
+
+.dark-mode .reader-content {
+  color: #ddd;
+}
+
+.dark-mode .reader-content h1,
+.dark-mode .reader-content h2 {
+  color: #fff;
+}
+
+.dark-mode .reader-controls {
+  background: #222;
+  border-bottom-color: #444;
+} 
